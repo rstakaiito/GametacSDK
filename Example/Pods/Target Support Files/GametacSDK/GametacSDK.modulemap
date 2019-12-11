@@ -1,0 +1,6 @@
+framework module GametacSDK {
+  umbrella header "GametacSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_GametacSDK_Example {
+  umbrella header "Pods-GametacSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

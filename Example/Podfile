@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'GametacSDK_Example' do
+  pod 'GametacSDK', :path => '../'
+  
+  
+  target 'GametacSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotifVC" customModule="AppsFlyer" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBarView" destination="F0s-Jf-bGI" id="Qbh-P5-Qa4"/>
+                <outlet property="containerView" destination="aso-F1-xvJ" id="5tR-qM-IiG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvv-gO-Vu4">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aso-F1-xvJ">
+                            <rect key="frame" x="0.0" y="43" width="1024" height="725"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </scrollView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="F0s-Jf-bGI" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="43"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="Gjn-Td-N8a"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ugO-IZ-EzH">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="F0s-Jf-bGI" firstAttribute="top" secondItem="mvv-gO-Vu4" secondAttribute="top" id="0rc-4N-8yu"/>
+                        <constraint firstAttribute="trailing" secondItem="aso-F1-xvJ" secondAttribute="trailing" id="Iiq-Sv-CRg"/>
+                        <constraint firstItem="aso-F1-xvJ" firstAttribute="leading" secondItem="mvv-gO-Vu4" secondAttribute="leading" id="Uh7-Li-Vdf"/>
+                        <constraint firstAttribute="trailing" secondItem="F0s-Jf-bGI" secondAttribute="trailing" id="b7n-nm-vOR"/>
+                        <constraint firstAttribute="bottom" secondItem="aso-F1-xvJ" secondAttribute="bottom" id="hev-v6-AHf"/>
+                        <constraint firstItem="aso-F1-xvJ" firstAttribute="top" secondItem="F0s-Jf-bGI" secondAttribute="bottom" id="rEL-yH-fCi"/>
+                        <constraint firstItem="F0s-Jf-bGI" firstAttribute="leading" secondItem="mvv-gO-Vu4" secondAttribute="leading" id="tbk-4c-Yug"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mvv-gO-Vu4" secondAttribute="bottom" id="M1X-e8-FuG"/>
+                <constraint firstItem="mvv-gO-Vu4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gjE-Ua-B3w"/>
+                <constraint firstItem="mvv-gO-Vu4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oad-qM-AXG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mvv-gO-Vu4" secondAttribute="trailing" id="uds-9u-LQA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="19.53125" y="29.882812499999996"/>
+        </view>
+    </objects>
+</document>

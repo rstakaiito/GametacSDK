@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NotificationTVCIdentity" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationTVCIdentity" id="IwA-D5-eia" customClass="NotificationTVC" customModule="AppCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IwA-D5-eia" id="bW5-a0-zWU">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M2E-sh-aud">
+                        <rect key="frame" x="8" y="15" width="50" height="50"/>
+                        <color key="backgroundColor" red="1" green="0.27058823529999998" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="NYY-AC-SbK"/>
+                            <constraint firstAttribute="width" constant="50" id="ilG-2j-Y5z"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUi-O6-fOe">
+                        <rect key="frame" x="66" y="16" width="301" height="23.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="8FS-RX-Elm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" text="Notification time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhe-LN-mPU">
+                        <rect key="frame" x="90" y="47.5" width="253" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="zWc-Oa-ecf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notification_comment" translatesAutoresizingMaskIntoConstraints="NO" id="WR4-ot-DDR">
+                        <rect key="frame" x="66" y="47.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="l3I-dj-zxB"/>
+                            <constraint firstAttribute="height" constant="16" id="pnh-OZ-Bhf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WR4-ot-DDR" firstAttribute="top" secondItem="PUi-O6-fOe" secondAttribute="bottom" constant="8" id="Eib-eY-4Ec"/>
+                    <constraint firstItem="PUi-O6-fOe" firstAttribute="leading" secondItem="M2E-sh-aud" secondAttribute="trailing" constant="8" id="IwI-QK-Myg"/>
+                    <constraint firstItem="M2E-sh-aud" firstAttribute="leading" secondItem="bW5-a0-zWU" secondAttribute="leading" constant="8" id="J4p-qL-biq"/>
+                    <constraint firstAttribute="trailing" secondItem="PUi-O6-fOe" secondAttribute="trailing" constant="8" id="Ov1-u5-7dK"/>
+                    <constraint firstItem="M2E-sh-aud" firstAttribute="centerY" secondItem="bW5-a0-zWU" secondAttribute="centerY" id="SfM-BI-aAG"/>
+                    <constraint firstItem="WR4-ot-DDR" firstAttribute="leading" secondItem="M2E-sh-aud" secondAttribute="trailing" constant="8" id="cJH-oc-FPd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Qhe-LN-mPU" secondAttribute="trailing" constant="16" id="coM-8V-GeO"/>
+                    <constraint firstItem="PUi-O6-fOe" firstAttribute="top" secondItem="bW5-a0-zWU" secondAttribute="top" constant="16" id="g6J-Ee-s7l"/>
+                    <constraint firstItem="Qhe-LN-mPU" firstAttribute="leading" secondItem="WR4-ot-DDR" secondAttribute="trailing" constant="8" id="kBQ-VK-YSP"/>
+                    <constraint firstItem="Qhe-LN-mPU" firstAttribute="centerY" secondItem="WR4-ot-DDR" secondAttribute="centerY" id="qjm-pP-wjC"/>
+                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Qhe-LN-mPU" secondAttribute="bottom" constant="16" id="ydZ-cP-1FM"/>
+                    <constraint firstItem="Qhe-LN-mPU" firstAttribute="top" secondItem="PUi-O6-fOe" secondAttribute="bottom" constant="8" id="z2M-HE-13E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgAvatar" destination="M2E-sh-aud" id="xBf-6v-SZB"/>
+                <outlet property="imgIcon" destination="WR4-ot-DDR" id="R61-8w-JxU"/>
+                <outlet property="lblTime" destination="Qhe-LN-mPU" id="D1N-0l-yzc"/>
+                <outlet property="lblTitle" destination="PUi-O6-fOe" id="Ued-Re-SGS"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="notification_comment" width="24" height="24"/>
+    </resources>
+</document>
