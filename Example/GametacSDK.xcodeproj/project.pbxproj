@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8FAD757D23A385F000A08ED9 /* TestGametacSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAD757C23A385F000A08ED9 /* TestGametacSDK.swift */; };
 		F64A153EC1185E43BC747092 /* Pods_GametacSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A287E23E5F69ADEB5C1AE1FF /* Pods_GametacSDK_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		63B257192C9E346BE17B9602 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8FAD757B23A385F000A08ED9 /* GametacSDK-GametacSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GametacSDK-GametacSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		8FAD757C23A385F000A08ED9 /* TestGametacSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGametacSDK.swift; sourceTree = "<group>"; };
 		A287E23E5F69ADEB5C1AE1FF /* Pods_GametacSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GametacSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6488F0D265FC525C3801027 /* Pods-GametacSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GametacSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-GametacSDK_Example/Pods-GametacSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C88D7F698419E8AC6BE8FB6E /* Pods-GametacSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GametacSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-GametacSDK_Tests/Pods-GametacSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				8FAD757A23A385F000A08ED9 /* Classes */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for GametacSDK */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -146,6 +150,16 @@
 				63B257192C9E346BE17B9602 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		8FAD757A23A385F000A08ED9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8FAD757B23A385F000A08ED9 /* GametacSDK-GametacSDK-Bridging-Header.h */,
+				8FAD757C23A385F000A08ED9 /* TestGametacSDK.swift */,
+			);
+			name = Classes;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
 		BB14AEB2312386702A2E3B82 /* Pods */ = {
@@ -271,11 +285,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GametacSDK_Example/Pods-GametacSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/GametacSDK/GametacSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GametacSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -334,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				8FAD757D23A385F000A08ED9 /* TestGametacSDK.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

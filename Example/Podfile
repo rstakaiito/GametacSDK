@@ -2,11 +2,13 @@ use_frameworks!
 
 target 'GametacSDK_Example' do
   pod 'GametacSDK', :path => '../'
-  
+  #pod 'AFNetworking', '~> 2.3'
+  #pod 'Alamofire'
+  #pod 'SwiftyJSON'
   
   target 'GametacSDK_Tests' do
     inherit! :search_paths
 
-    
+
   end
 end
