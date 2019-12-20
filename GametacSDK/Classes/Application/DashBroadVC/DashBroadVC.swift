@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SlideMenuControllerSwift
+//import SlideMenuControllerSwift
 
 //protocol LeftMenuProtocol : class {
 //    func changeViewController(_ menu: LeftMenu)
@@ -16,7 +16,7 @@ import SlideMenuControllerSwift
 class DashBroadVC: UIViewController {
     
     @IBAction func btnClose(_ sender: Any) {
-        slideMenuController()?.closeLeft()
+        //slideMenuController()?.closeLeft()
     }
     @IBAction func btnUserInfo(_ sender: Any) {
         btnUserInfo.setImage(#imageLiteral(resourceName: "ic_user"), for: .normal)

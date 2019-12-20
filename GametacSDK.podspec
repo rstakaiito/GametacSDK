@@ -34,9 +34,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'GametacSDK/Classes/Application/**/*.{h,m,swift,xcdatamodeld}'
   
-  s.resource_bundles = {
-      'GametacSDK' => ['GametacSDK/Assets/*.png']
-  }
+  #s.resource_bundles = {
+  #    'GametacSDK' => ['GametacSDK/Assets.xcassets/**/*']
+  #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'MapKit'
@@ -44,7 +44,6 @@ TODO: Add long description of the pod here.
   s.dependency 'Alamofire'
   s.dependency 'SwiftyJSON'
   s.dependency 'PopupDialog'
-  s.dependency 'SlideMenuControllerSwift'
   s.dependency 'Kingfisher'
   s.dependency 'XLPagerTabStrip'
   s.dependency 'FBSDKShareKit'

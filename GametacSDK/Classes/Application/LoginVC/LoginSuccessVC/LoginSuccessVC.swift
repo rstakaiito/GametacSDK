@@ -11,7 +11,7 @@ import UIKit
 class LoginSuccessVC: UIViewController {
 
     @IBAction func btnShowInfo(_ sender: Any) {
-        slideMenuController()?.openLeft()
+        //slideMenuController()?.openLeft()
     }
     @IBAction func btnLogout(_ sender: Any) {
         DispatchQueue.main.async {
