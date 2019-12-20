@@ -1,6 +1,6 @@
 {
   "name": "GametacSDK",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "summary": "GametacSDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/rstakaiito/GametacSDK",
@@ -13,13 +13,19 @@
   },
   "source": {
     "git": "https://github.com/rstakaiito/GametacSDK.git",
-    "tag": "1.1.0"
+    "tag": "1.1.2"
   },
+  "static_framework": true,
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
-  "swift_versions": "4.0",
-  "source_files": "GametacSDK/Classes/**/*",
+  "swift_versions": "4.2",
+  "source_files": "GametacSDK/Classes/Application/**/*.{h,m,swift,xcdatamodeld}",
+  "resource_bundles": {
+    "GametacSDK": [
+      "GametacSDK/Assets/*.png"
+    ]
+  },
   "frameworks": [
     "UIKit",
     "MapKit"
@@ -36,7 +42,43 @@
     ],
     "PopupDialog": [
 
+    ],
+    "SlideMenuControllerSwift": [
+
+    ],
+    "Kingfisher": [
+
+    ],
+    "XLPagerTabStrip": [
+
+    ],
+    "FBSDKShareKit": [
+
+    ],
+    "FBSDKCoreKit": [
+
+    ],
+    "FBSDKLoginKit": [
+
+    ],
+    "GoogleSignIn": [
+
+    ],
+    "Firebase": [
+
+    ],
+    "Firebase/Auth": [
+
+    ],
+    "KMPlaceholderTextView": [
+
+    ],
+    "DKImagePickerController": [
+
+    ],
+    "NVActivityIndicatorView": [
+
     ]
   },
-  "swift_version": "4.0"
+  "swift_version": "4.2"
 }

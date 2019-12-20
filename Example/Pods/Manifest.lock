@@ -21,15 +21,199 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Alamofire (4.9.1)
-  - DynamicBlurView (3.0.1)
-  - GametacSDK (1.1.0):
+  - AppAuth (1.3.0):
+    - AppAuth/Core (= 1.3.0)
+    - AppAuth/ExternalUserAgent (= 1.3.0)
+  - AppAuth/Core (1.3.0)
+  - AppAuth/ExternalUserAgent (1.3.0)
+  - CropViewController (2.5.2)
+  - DKCamera (1.6.6)
+  - DKImagePickerController (4.2.1):
+    - DKImagePickerController/Camera (= 4.2.1)
+    - DKImagePickerController/Core (= 4.2.1)
+    - DKImagePickerController/ImageDataManager (= 4.2.1)
+    - DKImagePickerController/InlineCamera (= 4.2.1)
+    - DKImagePickerController/PhotoEditor (= 4.2.1)
+    - DKImagePickerController/PhotoGallery (= 4.2.1)
+    - DKImagePickerController/Resource (= 4.2.1)
+  - DKImagePickerController/Camera (4.2.1):
+    - DKCamera
+    - DKImagePickerController/Core
+  - DKImagePickerController/Core (4.2.1):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.2.1)
+  - DKImagePickerController/InlineCamera (4.2.1):
+    - DKCamera
+    - DKImagePickerController/Core
+  - DKImagePickerController/PhotoEditor (4.2.1):
+    - CropViewController (~> 2.5)
+    - DKImagePickerController/Core
+  - DKImagePickerController/PhotoGallery (4.2.1):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.2.1)
+  - DKPhotoGallery (0.0.14):
+    - DKPhotoGallery/Core (= 0.0.14)
+    - DKPhotoGallery/Model (= 0.0.14)
+    - DKPhotoGallery/Preview (= 0.0.14)
+    - DKPhotoGallery/Resource (= 0.0.14)
+    - SDWebImage
+    - SDWebImageFLPlugin
+  - DKPhotoGallery/Core (0.0.14):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage
+    - SDWebImageFLPlugin
+  - DKPhotoGallery/Model (0.0.14):
+    - SDWebImage
+    - SDWebImageFLPlugin
+  - DKPhotoGallery/Preview (0.0.14):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage
+    - SDWebImageFLPlugin
+  - DKPhotoGallery/Resource (0.0.14):
+    - SDWebImage
+    - SDWebImageFLPlugin
+  - DynamicBlurView (4.0.0)
+  - FBSDKCoreKit (5.13.1):
+    - FBSDKCoreKit/Basics (= 5.13.1)
+    - FBSDKCoreKit/Core (= 5.13.1)
+  - FBSDKCoreKit/Basics (5.13.1)
+  - FBSDKCoreKit/Core (5.13.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.13.1):
+    - FBSDKLoginKit/Login (= 5.13.1)
+  - FBSDKLoginKit/Login (5.13.1):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKShareKit (5.13.1):
+    - FBSDKShareKit/Share (= 5.13.1)
+  - FBSDKShareKit/Share (5.13.1):
+    - FBSDKCoreKit (~> 5.0)
+  - Firebase (6.14.0):
+    - Firebase/Core (= 6.14.0)
+  - Firebase/Auth (6.14.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 6.4.1)
+  - Firebase/Core (6.14.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.1.7)
+  - Firebase/CoreOnly (6.14.0):
+    - FirebaseCore (= 6.5.0)
+  - FirebaseAnalytics (6.1.7):
+    - FirebaseCore (~> 6.5)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleAppMeasurement (= 6.1.7)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - FirebaseAuth (6.4.1):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.2)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.2)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (6.5.0):
+    - FirebaseCoreDiagnostics (~> 1.0)
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.4)
+    - GoogleUtilities/Logger (~> 6.4)
+  - FirebaseCoreDiagnostics (1.1.2):
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleDataTransportCCTSupport (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.1.0)
+  - FirebaseInstanceID (4.2.8):
+    - FirebaseCore (~> 6.5)
+    - GoogleUtilities/Environment (~> 6.4)
+    - GoogleUtilities/UserDefaults (~> 6.4)
+  - FLAnimatedImage (1.0.12)
+  - GametacSDK (1.1.2):
     - AFNetworking (~> 2.3)
     - Alamofire
+    - DKImagePickerController
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - Firebase
+    - Firebase/Auth
+    - GoogleSignIn
+    - Kingfisher
+    - KMPlaceholderTextView
+    - NVActivityIndicatorView
     - PopupDialog
+    - SlideMenuControllerSwift
     - SwiftyJSON
-  - PopupDialog (1.0.0):
-    - DynamicBlurView (~> 3.0.1)
+    - XLPagerTabStrip
+  - GoogleAppMeasurement (6.1.7):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleDataTransport (3.2.0)
+  - GoogleDataTransportCCTSupport (1.2.3):
+    - GoogleDataTransport (~> 3.2)
+    - nanopb (~> 0.3.901)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleUtilities/AppDelegateSwizzler (6.4.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.4.0)
+  - GoogleUtilities/Logger (6.4.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.4.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.4.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.4.0)"
+  - GoogleUtilities/Reachability (6.4.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.4.0):
+    - GoogleUtilities/Logger
+  - GTMAppAuth (1.0.0):
+    - AppAuth/Core (~> 1.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.3.0):
+    - GTMSessionFetcher/Full (= 1.3.0)
+  - GTMSessionFetcher/Core (1.3.0)
+  - GTMSessionFetcher/Full (1.3.0):
+    - GTMSessionFetcher/Core (= 1.3.0)
+  - Kingfisher (5.12.0):
+    - Kingfisher/Core (= 5.12.0)
+  - Kingfisher/Core (5.12.0)
+  - KMPlaceholderTextView (1.4.0)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
+  - SDWebImage (5.4.0):
+    - SDWebImage/Core (= 5.4.0)
+  - SDWebImage/Core (5.4.0)
+  - SDWebImageFLPlugin (0.3.0):
+    - FLAnimatedImage (>= 1.0.11)
+    - SDWebImage/Core (~> 5.0)
+  - SlideMenuControllerSwift (4.0.0)
   - SwiftyJSON (5.0.0)
+  - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
   - GametacSDK (from `../`)
@@ -38,9 +222,41 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - Alamofire
+    - AppAuth
+    - CropViewController
+    - DKCamera
+    - DKImagePickerController
+    - DKPhotoGallery
     - DynamicBlurView
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseInstanceID
+    - FLAnimatedImage
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleSignIn
+    - GoogleUtilities
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - Kingfisher
+    - KMPlaceholderTextView
+    - nanopb
+    - NVActivityIndicatorView
     - PopupDialog
+    - SDWebImage
+    - SDWebImageFLPlugin
+    - SlideMenuControllerSwift
     - SwiftyJSON
+    - XLPagerTabStrip
 
 EXTERNAL SOURCES:
   GametacSDK:
@@ -49,11 +265,43 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  DynamicBlurView: b1df5415f9bd31897549e5d7077e5ec120a4d636
-  GametacSDK: de9949d6cf2ce7af90ca3c384020733b5462176a
-  PopupDialog: 28f29a1ffe9e1fab32fb258b53d56ca31670e8a2
+  AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
+  CropViewController: 1aac40093c5739e60d992b04724a55d12a689a4c
+  DKCamera: d6fad4db4b25c00eefe6904e9c86a926034d0c62
+  DKImagePickerController: faddfe5b1240ed5fa05b6001169e60ed9b5b2df7
+  DKPhotoGallery: 0290d32343574f06eaa4c26f8f2f8a1035e916be
+  DynamicBlurView: ccf9acd2b20c883cc2c72e3524a04d8d3ee20533
+  FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
+  FBSDKLoginKit: c7c6ffd9ca9ea45aee32361840af040ad8f6706a
+  FBSDKShareKit: 8a0e4d7172c7b706991c834cff2bf74e7b4726e3
+  Firebase: 0219bb4782eb1406f1b9b0628a2e625484ce910d
+  FirebaseAnalytics: f68b9f3f1241385129ae0a83b63627fc420c05e5
+  FirebaseAuth: 831577b184ecaba38bc886768c1c22a450cc44e3
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: 632e05cc5e1199d9147122c16d92305eb04c34bd
+  FirebaseCoreDiagnostics: 511f4f3ed7d440bb69127e8b97c2bc8befae639e
+  FirebaseCoreDiagnosticsInterop: e9b1b023157e3a2fc6418b5cb601e79b9af7b3a0
+  FirebaseInstanceID: ce993a3c3670a8f5d47ce371ac5d143c560608c5
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  GametacSDK: b1c2242a54c7d186ad820ab542a6ca140daea406
+  GoogleAppMeasurement: db118eb61a97dd8c4f7014e368d3c335cbbcf80a
+  GoogleDataTransport: 8e9b210c97d55fbff306cc5468ff91b9cb32dcf5
+  GoogleDataTransportCCTSupport: 202d7cdf9c4a7d81a2bb7f7e7e1ba6faa421b1f2
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
+  GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
+  GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
+  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
+  KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
+  SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
+  SDWebImageFLPlugin: cf3f4ae49f249dd785129346fd61bbc8433a88cf
+  SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: 2ec049e662f009736bb99fb6a1b3639c244e47b4
+PODFILE CHECKSUM: 465f9c24771ac69b24d36c8020dace7013d8b829
 
 COCOAPODS: 1.8.4

@@ -7,8 +7,33 @@
 //
 
 import UIKit
+import GametacSDK
 
 class ViewController: UIViewController {
+    
+    
+    
+    
+    
+    // Example methods
+    
+    private func sampleShowLoginDialog(){
+         
+        GametacSDK.sharedInstance.showLoginDialog(self) { (isCancel) in
+            
+            if(isCancel){
+                print("User click to close button and do not make anything")
+            }else{
+                print("User login success")
+                let userInfo = GametacSDK.sharedInstance.getLoginedInfo()
+                print(userInfo)
+            }
+        }
+    }
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +45,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
+    @IBAction func didTouchLogin(){
+        self.sampleShowLoginDialog()
+    }
 }
 

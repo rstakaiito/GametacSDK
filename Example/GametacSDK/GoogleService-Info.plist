@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>577233439175-f2j802ako3826nrvt1nkcthdnbi6bk8q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.577233439175-f2j802ako3826nrvt1nkcthdnbi6bk8q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCGIQ8QphKf_wByYA-QFwoQfBeV3KlxDoo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>577233439175</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.newsoft.GameTacSample</string>
+	<key>PROJECT_ID</key>
+	<string>musicstation-156017</string>
+	<key>STORAGE_BUCKET</key>
+	<string>musicstation-156017.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:577233439175:ios:30578cefb573934d38f1e2</string>
+	<key>DATABASE_URL</key>
+	<string>https://musicstation-156017.firebaseio.com</string>
+</dict>
+</plist>
